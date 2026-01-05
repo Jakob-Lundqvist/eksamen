@@ -229,8 +229,11 @@ header {
 .arrow-back {
   text-decoration: none;
   color: #6d5022;
-  margin-left: 3em;
-  font-size: clamp(20px, 3vw, 30px);
+  margin-left: 2em;
+  font-size: clamp(28px, 3vw, 40px);
+  display: inline-block;
+  transform: rotate(180deg);
+  transition: none;
 }
 .h1-port {
   margin: 0;
@@ -284,7 +287,7 @@ header {
   transition: transform 0.3s ease;
 }
 
-.introuge a:hover {
+.port-section a:hover {
   transform: scale(1.1);
 }
 
