@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <title>Om mig</title>
   </head>
   <body>
@@ -39,12 +40,61 @@
       </nav>
     </header>
     <main>
-      <p>&#x25B2;</p>
+      <section class="about">
+        <h1 class="h1_om">Om mig</h1>
+
+        <div class="content">
+          <!-- VENSTRE SIDE -->
+          <div class="work">
+            <h2 class="h2_om">Hvor har jeg arbejdet?</h2>
+
+            <section class="experience">
+              <details>
+                <summary class="job">Kvickly – Ungarbejder – Januar 2020 / marts 2022</summary>
+                <p class="job_p">
+                  Som ungarbejder i Kvickly fik jeg erfaring med kundeservice, ansvar og samarbejde i en travl hverdag. Jeg arbejdede med kassebetjening og kundekontakt, hvilket styrkede mine kommunikative evner og min forståelse for service.
+                </p>
+              </details>
+
+              <details>
+                <summary class="job">Q8 – Salgsassistent – Marts 2023 / december 2023</summary>
+                <p class="job_p">Hos Q8 arbejdede jeg med kundeservice, salg og håndtering af daglige driftsopgaver. Arbejdet lærte mig at bevare overblik, tage ansvar og yde god service – også i pressede situationer.</p>
+              </details>
+
+              <details>
+                <summary class="job">Børnehuset Solbjerg – Pædagogisk vikar – Oktober 2023 / juni 2024</summary>
+                <p class="job_p">Som pædagogisk vikar arbejdede jeg med børn i alderen 0–6 år og var med til at skabe trygge og omsorgsfulde rammer. Jeg fik erfaring med relationsarbejde, struktur og kommunikation tilpasset forskellige behov.</p>
+              </details>
+
+              <details>
+                <summary class="job">Søndersøskolen – Lærervikar – Juni 2024 / december 2025</summary>
+                <p class="job_p">
+                  Som lærervikar har jeg undervist og ledet klasser på tværs af klassetrin. Stillingen har styrket mine evner inden for formidling, klasseledelse og struktur, samt min evne til at tilpasse mig forskellige læringssituationer.
+                </p>
+              </details>
+            </section>
+          </div>
+
+          <div class="image-box">
+            <img src="billeder_eksamen/om-mig.webp" alt="" />
+          </div>
+        </div>
+
+        <div class="interests">
+          <h2 class="h2_om">Fritid & interesser</h2>
+          <ul>
+            <li>I min fritid er jeg aktiv med løb og styrketræning</li>
+            <li>Jeg arbejder med videoredigering med fokus på struktur og tempo</li>
+            <li>Har en systematisk tilgang til hverdagen</li>
+            <li>Trives med overblik, konsistens og gennemtænkte løsninger</li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-left">
         <a href="index.html">
-          <svg class="logo_footer" id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.17 159.13">
+          <svg class="logo_footer" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.17 159.13">
             <path d="M0,130.47c17-39.19,45.53,17.86,56.94-10.66,17.12-34.23,0-79.87,11.41-119.81h28.53c-11.41,51.35,28.53,142.63-47.28,158.26-23.49,0-38.94-9.18-49.59-27.79Z" fill="#FFFDD4" />
 
             <path
@@ -90,5 +140,6 @@
       </div>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="dropdown.js"></script>
   </body>
 </html>

@@ -71,7 +71,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 0 5em 0;
+  padding: 2em 0 4em 0;
   background-color: #000;
   color: #fffdd4;
 }
@@ -255,8 +255,8 @@ header {
   place-self: center;
   font-family: poppin;
   font-size: clamp(40px, 5vw, 60px);
-  /* margin: 0 0 1.5em 0; */
 }
+
 .port-card p {
   text-align: left;
   font-size: clamp(12px, 3vw, 18px);
@@ -278,7 +278,7 @@ header {
   cursor: pointer;
   justify-items: center;
   align-items: center;
-  margin: 3em 0;
+  margin: 2em 0;
 }
 .introuge a {
   transition: transform 0.3s ease;
@@ -302,6 +302,68 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3em;
+}
+.img_container a {
+  background-color: #fffdd4;
+  margin: 0em;
+}
+/* OM MIG */
+.h1_om {
+  display: grid;
+  place-self: center;
+  font-family: poppin;
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 0 0 1em 0;
+}
+.h2_om {
+  font-family: poppin;
+  font-size: clamp(15px, 5vw, 30px);
+  color: #5c4a2d;
+  margin-left: 2em;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.job {
+  padding: 0.8em;
+  background-color: #dcb980;
+  margin: 0.5em 5em 0.5em 3em;
+  font-family: inter;
+}
+.job_p {
+  padding: 0.8em;
+  margin: 0.5em 5em 0.5em 3em;
+  font-family: inter;
+}
+details p {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+details[open] p {
+  max-height: 500px;
+  opacity: 1;
+}
+.image-box img {
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.22);
+  object-fit: contain;
+  max-width: 100%;
+}
+.image-box {
+  place-self: center;
+}
+.interests ul li {
+  list-style-type: disc;
+  margin: 0em 3em 0em 4em;
+  padding: 1em 0em;
+  font-size: clamp(12px, 5vw, 20px);
+}
+.interests ul li:last-child {
+  padding-bottom: 5em;
 }
 
 @media (width < 800px) {
@@ -337,5 +399,12 @@ header {
   .port-card img {
     margin: 0 2em;
     object-fit: cover;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image-box img {
+    margin: 2em 0;
   }
 }
