@@ -10,12 +10,7 @@
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: "interbold";
-  src: url(../font/Inter-VariableFont_opsz\wght.woff2);
-  font: weight 600px;
-  font-style: normal;
-}
+
 @font-face {
   font-family: "poppins-bold";
   src: url("../font/Poppins-SemiBold.woff2") format("woff2");

@@ -122,7 +122,6 @@ header {
   align-items: center;
   margin: 0 4em 0em 5em;
   padding-bottom: 5em;
-  padding-top: 10m;
 }
 .index_img {
   border-radius: 40px 20px;
@@ -146,7 +145,7 @@ header {
   border-radius: 20px 50px;
   margin: 3em 0 3em 5em;
   font-family: inter;
-  font-size: clamp(10px, 5vw, 20px);
+  font-size: clamp(10px, 4vw, 20px);
   cursor: pointer;
 }
 
@@ -385,7 +384,6 @@ details[open] p {
   margin-top: 4em;
 }
 .interests_right {
-  /* background-color: #dcb980; */
   margin: 0 3em;
   border-radius: 20px 10px;
 }
