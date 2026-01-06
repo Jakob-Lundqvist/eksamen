@@ -333,11 +333,13 @@ header {
   background-color: #dcb980;
   margin: 0.5em 5em 0.5em 3em;
   font-family: inter;
+  border-radius: 20px 10px;
 }
 .job_p {
   padding: 0.8em;
   margin: 0.5em 5em 0.5em 3em;
   font-family: inter;
+  line-height: 1.2em;
 }
 details p {
   max-height: 0;
@@ -364,6 +366,7 @@ details[open] p {
   margin: 0em 3em 0em 4em;
   padding: 1em 0em;
   font-size: clamp(12px, 5vw, 20px);
+  font-family: inter;
 }
 .interests ul li:last-child {
   padding-bottom: 5em;
@@ -409,5 +412,8 @@ details[open] p {
   }
   .image-box img {
     margin: 2em 0;
+  }
+  .nav-links {
+    margin: 1em 0 0 0;
   }
 }
