@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "inter";
   src: url("../font/Inter-VariableFont_opsz\,wght.woff2") format("woff2");
@@ -12,8 +13,8 @@
 }
 
 main p {
-  font-family: inter;
-  font-weight: bolder;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
 }
 * {
   margin: 0;
@@ -48,7 +49,8 @@ header {
   text-decoration: none;
   color: #111;
   font-size: clamp(16px, 3vw, 20px);
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
 }
 
 .nav-links a.active {
@@ -93,7 +95,8 @@ header {
 .footer-right p {
   text-align: right;
   font-size: clamp(12px, 3vw, 18px);
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
 }
 
 .footer-right {
@@ -188,7 +191,8 @@ header {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.22);
 }
 .card h2 {
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
   place-self: center;
 }
 .card h2:first-child {
@@ -201,7 +205,8 @@ header {
   background-color: #6d5022;
   border-radius: 12px;
   padding: 0.8em 2.5em;
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
   place-self: center;
   margin-top: 1em;
   font-size: clamp(12px, 4vw, 22px);
@@ -262,10 +267,12 @@ header {
 .port-card p {
   text-align: left;
   font-size: clamp(12px, 3vw, 18px);
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
   justify-items: center;
   align-items: center;
   margin: 2em 5em;
+  line-height: 1.5em;
 }
 .port-section a {
   display: grid;
@@ -275,7 +282,8 @@ header {
   background-color: #88601f;
   padding: 0.8em 2.7em;
   border-radius: 20px 50px;
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
   font-size: clamp(10px, 5vw, 25px);
   cursor: pointer;
   justify-items: center;
@@ -318,13 +326,15 @@ header {
   margin: 0 0 1em 0;
 }
 .h2_om {
-  font-family: poppin;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
   font-size: clamp(15px, 5vw, 30px);
   color: #5c4a2d;
   margin-left: 2em;
 }
 .h2_sem {
-  font-family: poppin;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
   font-size: clamp(15px, 5vw, 30px);
   color: #5c4a2d;
   margin-bottom: 1em;
@@ -337,13 +347,15 @@ header {
   padding: 0.8em;
   background-color: #dcb980;
   margin: 0.5em 5em 0.5em 3em;
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
   border-radius: 20px 10px;
 }
 .job_p {
   padding: 0.8em;
   margin: 0.5em 5em 0.5em 3em;
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
   line-height: 1.2em;
   font-size: clamp(10px, 5vw, 18px);
 }
@@ -351,7 +363,9 @@ details p {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 1s ease, opacity 1s ease;
+  transition:
+    max-height 1s ease,
+    opacity 1s ease;
 }
 
 details[open] p {
@@ -372,7 +386,8 @@ details[open] p {
   margin: 0em 3em 0em 4em;
   padding: 1em 0em;
   font-size: clamp(12px, 5vw, 20px);
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
 }
 .interests ul li:last-child {
   padding-bottom: 7em;
@@ -388,7 +403,8 @@ details[open] p {
   border-radius: 20px 10px;
 }
 .interests_p {
-  font-family: inter;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
   font-size: clamp(10px, 5vw, 18px);
   line-height: 1.6em;
   margin-bottom: 1em;
