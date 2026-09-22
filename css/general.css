@@ -239,6 +239,20 @@ header {
   transform: rotate(180deg);
   transition: none;
 }
+.arrow-next {
+  text-decoration: none;
+  color: #6d5022;
+  margin-right: 2em;
+  font-size: clamp(28px, 3vw, 40px);
+  display: inline-block;
+  transition: none;
+}
+.port-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 .h1-port {
   margin: 0;
 }
@@ -350,6 +364,23 @@ header {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   border-radius: 20px 10px;
+  position: relative;
+  padding-left: 1.5em;
+}
+.job::before {
+  content: "▶";
+  position: absolute;
+  left: 0.5em;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.job.active::before {
+  transform: rotate(90deg);
+}
+.job:hover {
+  background-color: #c9a96e;
+  cursor: pointer;
 }
 .job_p {
   padding: 0.8em;
@@ -359,7 +390,7 @@ header {
   line-height: 1.2em;
   font-size: clamp(10px, 5vw, 18px);
 }
-details p {
+/* details p {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -371,6 +402,24 @@ details p {
 details[open] p {
   max-height: 500px;
   opacity: 1;
+} */
+
+.job_p {
+  box-sizing: border-box;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 1s ease,
+    opacity 1s ease,
+    padding 1s ease;
+  padding: 0 0.8em;
+}
+
+.job_p.open {
+  max-height: 500px;
+  opacity: 1;
+  padding: 0.8em;
 }
 .image-box img {
   border-radius: 15px;
@@ -411,6 +460,9 @@ details[open] p {
 }
 .interests_right:first-child {
   background-color: white;
+}
+.img_container a:hover {
+  scale: 100%;
 }
 
 @media (width < 800px) {
